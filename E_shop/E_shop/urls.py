@@ -12,5 +12,7 @@ urlpatterns = [
     path('base/',views.BASE,name='base'),
     path('products/',views.PRODUCT,name='products'),
 
+    path('search/',views.SEARCH,name='search'),
+
 ] + static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
 
