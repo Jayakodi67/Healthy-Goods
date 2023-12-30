@@ -37,3 +37,11 @@ def SEARCH(request):
         'product': product
     }
     return render(request, 'Main/search.html',context)
+
+
+def PRODUCT_DETAIL_PAGE(request,id):
+    prod = Product.objects.filter(id = id).first()
+    context = {
+        'prod': prod
+    }
+    return render (request,'Main/product_single.html',context)
