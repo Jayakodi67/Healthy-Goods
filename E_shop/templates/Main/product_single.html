@@ -1,6 +1,8 @@
 {% extends 'Main/base.html' %}
 
 {% block content %}
+{% load static %}
+
   <!-- Product Details Area Start -->
         <div class="product-details-area pt-100px pb-100px">
             <div class="container">
@@ -54,7 +56,7 @@
                                 </div>
                                 <span class="read-review"><a class="reviews" href="#">(5 Customer Review)</a></span>
                             </div>
-                            <p class="mt-30px">{{prod.description}}</p>
+                            <p class="mt-30px">{{prod.description | safe}}</p>
                             <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
                                 <span>SKU:</span>
                                 <ul class="d-flex">
@@ -111,7 +113,7 @@
                                 <div id="des-details1" class="tab-pane active">
                                     <div class="product-description-wrapper">
                                         <p>
-                                       {{prod.description}}
+                                       {{prod.description | safe}}
                                         </p>
                                     </div>
                                 </div>

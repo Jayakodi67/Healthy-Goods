@@ -15,6 +15,7 @@ urlpatterns = [
 
 
     path('search/',views.SEARCH,name='search'),
+    path('contact/',views.Contact_Page,name='contact'),
 
 ] + static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
 

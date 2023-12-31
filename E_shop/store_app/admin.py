@@ -24,3 +24,5 @@ admin.site.register(Brand)
 admin.site.register(Color)
 admin.site.register(Filter_price)
 admin.site.register(Product,ProductAdmin)
+admin.site.register(Contact_us)
+
