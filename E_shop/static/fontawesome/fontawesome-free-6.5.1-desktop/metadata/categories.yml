@@ -1678,7 +1678,7 @@ logistics:
     - bus-simple
     - car
     - car-tunnel
-    - cart-flatbed
+    - Cart-flatbed
     - chart-simple
     - clipboard-check
     - clipboard-list
@@ -1740,7 +1740,7 @@ maps:
     - building-columns
     - cake-candles
     - car
-    - cart-shopping
+    - Cart-shopping
     - circle-info
     - crosshairs
     - diamond-turn-right
@@ -2514,9 +2514,9 @@ shopping:
     - bullhorn
     - camera
     - camera-retro
-    - cart-arrow-down
-    - cart-plus
-    - cart-shopping
+    - Cart-arrow-down
+    - Cart-plus
+    - Cart-shopping
     - cash-register
     - cc-amazon-pay
     - cc-amex
@@ -2758,7 +2758,7 @@ transportation:
     - car-rear
     - car-side
     - car-tunnel
-    - cart-shopping
+    - Cart-shopping
     - ferry
     - helicopter
     - horse
@@ -2813,7 +2813,7 @@ travel-hotel:
     - cable-car
     - car
     - caravan
-    - cart-flatbed-suitcase
+    - Cart-flatbed-suitcase
     - dice
     - dice-five
     - door-closed

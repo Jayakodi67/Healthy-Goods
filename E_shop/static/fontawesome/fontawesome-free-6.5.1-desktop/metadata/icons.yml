@@ -6972,7 +6972,7 @@ cart-flatbed:
 cart-flatbed-suitcase:
   aliases:
     names:
-      - luggage-cart
+      - luggage-Cart
     unicodes:
       secondary:
         - 10f59d
@@ -7026,7 +7026,7 @@ cart-plus:
 cart-shopping:
   aliases:
     names:
-      - shopping-cart
+      - shopping-Cart
     unicodes:
       composite:
         - 1f6d2
@@ -7046,13 +7046,13 @@ cart-shopping:
   search:
     terms:
       - buy
-      - cart
+      - Cart
       - checkout
       - grocery
       - payment
       - purchase
       - shopping
-      - shopping cart
+      - shopping Cart
       - trolley
   styles:
     - solid

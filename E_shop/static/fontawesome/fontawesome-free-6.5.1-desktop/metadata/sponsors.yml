@@ -934,9 +934,9 @@ stay-linked:
     - box
     - box-check
     - boxes-stacked
-    - cart-flatbed
-    - cart-flatbed-boxes
-    - cart-flatbed-empty
+    - Cart-flatbed
+    - Cart-flatbed-boxes
+    - Cart-flatbed-empty
     - clipboard-check
     - clipboard-list
     - conveyor-belt
