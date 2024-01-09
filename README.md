@@ -19,44 +19,70 @@ Payment Options: Choose between online payments through Razorpay or opt for the 
 Responsive Design: Orga Green is built with HTML, CSS, Bootstrap, and JavaScript for a responsive and visually appealing frontend.
 
 
+
+
 Getting Started
 
 To run Orga Green locally on your machine, follow these simple steps:
 
 
+
+
 Clone the Project:
 
 bash
+
 Copy code
+
 git clone https://github.com/your-username/orga-green.git
+
 cd orga-green
+
 Install Dependencies:
 
+
 bash
 Copy code
+
 pip install -r requirements.txt
+
 Database Setup:
 
-bash
-Copy code
-python manage.py migrate
-python manage.py createsuperuser
-Run the Development Server:
 
 bash
+
+Copy code
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+Run the Development Server:
+
+
+bash
+
 Copy code
 python manage.py runserver
 Access the Application:
 Open your web browser and go to http://127.0.0.1:8000/
 
+
 Dependencies
+
 Django
+
 Razorpay
+
 XMLHTML
+
 Other related projects (mentioned in requirements.txt)
 
 
+
 Contact
+
 For any inquiries or support, feel free to contact us at contact@orgagreen.com
+
 
 Happy Shopping with Orga Green!
