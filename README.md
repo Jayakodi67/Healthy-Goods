@@ -3,9 +3,10 @@ Orga Green - Your Organic Marketplace
 Welcome to Orga Green, the ultimate destination for fresh, organic vegetables, fruits, fertilizers, crops, and seeds. This Django-based e-commerce website allows users to seamlessly browse through a variety of GAP certified products, add them to the cart, make orders, and conveniently pay through Razorpay or opt for Cash on Delivery. With a responsive and user-friendly interface, Orga Green makes the process of shopping for organic produce a delightful experience.
 
 Features
-Product Categories: Explore a wide range of products, including vegetables, fruits, fertilizers, crops, and seeds.
 
-GAP Certification: All fruits and vegetables available on Orga Green are certified with Good Agricultural Practices (GAP), ensuring the highest quality and safety standards.
+Product Categories:  Explore a wide range of products, including vegetables, fruits, fertilizers, crops, and seeds.
+
+GAP Certification: All fruits and vegetables available on Orga Green are certified with Good Agricultural Practices (GAP), ensuring the highest                    quality and safety standards.
 
 Quick Views: Make your shopping experience efficient with quick views for products, allowing users to get essential information at a glance.
 
