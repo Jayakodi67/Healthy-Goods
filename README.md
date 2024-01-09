@@ -33,21 +33,31 @@ Clone the Project:
 bash
 
 Copy code
+
 git clone https://github.com/your-username/orga-green.git
+
 cd orga-green
+
 Install Dependencies:
+
 Copy code
+
 pip install -r requirements.txt
 
-Database Setup:
+
 
 python manage.py migrate
+
 python manage.py createsuperuser
+
 Run the Development Server:
 
 
+
 python manage.py runserver
+
 Access the Application:
+
 Open your web browser and go to http://127.0.0.1:8000/
 
 
