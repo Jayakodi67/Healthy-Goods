@@ -43,9 +43,6 @@ Install Dependencies:
 Copy code
 
 pip install -r requirements.txt
-
-
-
 python manage.py migrate
 
 python manage.py createsuperuser
@@ -62,10 +59,6 @@ Open your web browser and go to http://127.0.0.1:8000/
 
 
 Dependencies -Django , Razorpay  , XMLHTML
-
-
-Contact
-For any inquiries or support, feel free to contact us at contact@orgagreen.com
 
 
 Happy Shopping with Orga Green!
