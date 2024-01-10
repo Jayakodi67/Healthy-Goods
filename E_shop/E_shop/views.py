@@ -6,12 +6,9 @@ from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 from cart.cart import Cart
 from django.views.decorators.csrf import csrf_exempt
-
 import razorpay
 
 client = razorpay.Client(auth=(settings.RAZORPAY_KEY_ID,settings.RAZORPAY_KEY_SECRECT))
-
-
 
 def BASE(request):
     return render(request,'Main/base.html')
@@ -94,7 +91,6 @@ def HandleRegister(request):
 
     return render(request,'Registration/auth.html')
 
-
 def HandleLogin(request):
     if request.method == "POST":
         username = request.POST.get('username')
@@ -107,17 +103,12 @@ def HandleLogin(request):
         else:
             return redirect('login')
 
-
     return render(request, 'Registration/auth.html')
 
 
 def HandleLogout(request):
     logout(request)
-
     return redirect('home')
-
-
-
 
 @login_required(login_url="/login/")
 def cart_add(request, id):
@@ -164,12 +155,15 @@ def cart_detail(request):
 
 
 def Check_out(request):
+    amount_str = request.POST.get('amount')
+    amount_float = float(amount_str)
+    amount = int(amount_float)
+
     payment = client.order.create({
-        "amount": 500,
+        "amount": amount,
         "currency": "INR",
         "payment_capture" : "1"
     })
-
 
     order_id = payment['id']
     context = {
@@ -177,8 +171,6 @@ def Check_out(request):
         'payment': payment,
     }
     return render(request,'Cart/checkout.html',context)
-
-
 
 def PLACE_ORDER(request):
     if request.method == 'POST':
@@ -220,6 +212,7 @@ def PLACE_ORDER(request):
             total = a * b
 
             item = OrderItem(
+                user = user,
                 order = order,
                 product = cart[i]['name'],
                 image = cart[i]['image'],
@@ -245,3 +238,15 @@ def SUCCESS(request):
         user.paid = True
         user.save()
     return render(request,'Cart/thank-you.html')
+
+
+def Your_Order(request):
+    uid = request.session.get('_auth_user_id')
+    user = User.objects.get(id=uid)
+
+    order = OrderItem.objects.filter(user = user)
+    context = {
+        'order':order,
+    }
+
+    return render(request,'Main/your_order.html',context)
