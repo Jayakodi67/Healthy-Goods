@@ -4,7 +4,7 @@ from django.conf import settings
 # from django.conf.urls.static import static
 from django.conf.urls.static import static
 from .import views
-
+app_name = 'cart'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.HOME,name='home'),
@@ -19,6 +19,7 @@ urlpatterns = [
 
     path('cart/add/<int:id>/', views.cart_add, name='cart_add'),
     path('cart/item_clear/<int:id>/', views.item_clear, name='item_clear'),
+    path('cart/item_clear_modal/<int:id>/', views.item_clear_modal, name='item_clear_modal'),
     path('cart/item_increment/<int:id>/',
          views.item_increment, name='item_increment'),
     path('cart/item_decrement/<int:id>/',
@@ -28,6 +29,7 @@ urlpatterns = [
     path('cart/checkout/',views.Check_out,name='checkout'),
     path('cart/checkout/placeorder',views.PLACE_ORDER,name='place_order'),
     path('success/',views.SUCCESS,name='success'),
+    path('about/',views.ABOUT,name='about'),
 
     path('Your_Order/',views.Your_Order,name='your_order')
 

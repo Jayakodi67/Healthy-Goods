@@ -125,6 +125,13 @@ def item_clear(request, id):
     cart.remove(product)
     return redirect("cart_detail")
 
+@login_required(login_url="/login/")
+def item_clear_modal(request, id):
+    cart = Cart(request)
+    product = Product.objects.get(id=id)
+    cart.remove(product)
+    return redirect("home")
+
 
 @login_required(login_url="/login/")
 def item_increment(request, id):
@@ -188,8 +195,6 @@ def PLACE_ORDER(request):
         phone = request.POST.get('phone')
         email = request.POST.get('email')
         amount = request.POST.get('amount')
-
-
         order_id = request.POST.get('order_id')
         payment = request.POST.get('payment')
 
@@ -250,3 +255,6 @@ def Your_Order(request):
     }
 
     return render(request,'Main/your_order.html',context)
+
+def ABOUT(request):
+    return render(request, 'Cart/about.html')
