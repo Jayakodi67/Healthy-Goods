@@ -1,9 +1,8 @@
 {% extends 'Main/base.html' %}
-
 {% block content %}
 {% load static %}
 {% if request.session.cart|length < 1 %}
- <!-- Empty Cart area start -->
+
         <div class="empty-cart-area pb-100px pt-100px">
             <div class="container">
                 <div class="row">
@@ -14,18 +13,17 @@
                         <div class="empty-text-contant text-center">
                             <i class="pe-7s-shopbag"></i>
                             <h3>There are no more items in your cart</h3>
-                            <a class="empty-cart-btn" href="{% url 'products' %}">
-                                <i class="fa fa-arrow-left"> </i> Continue shopping
+                            <a class="empty-cart-btn" href="{% url 'products' %}"  style="background-color: #4CAF90">
+                                Continue shopping
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Empty Cart area end -->
 {% else %}
 {% load cart_tag %}
-<!-- Cart Area Start -->
+
         <div class="cart-main-area pt-100px pb-100px">
             <div class="container">
                 <h3 class="cart-page-title">Your cart items</h3>
@@ -57,18 +55,18 @@
                                             <td class="product-price-cart"><span class="amount">Rs. {{ value.price }}</span></td>
                                             <td class="product-quantity">
                                                 <div class="cart_quantity_button">
-                                                    <a class="cart_quantity_up" href="{% url 'item_increment' value.product_id %}"> + </a>
+                                                    <a class="cart_quantity_up" style="color: #4CAF90" href="{% url 'item_increment' value.product_id %}"> &#10010 </a>
                                                     <input class="cart-plus-minus-box" type="text" name="qtybutton" value="{{ value.quantity }}" readonly/>
                                                     {% if value.quantity > 1 %}
-                                                        <a class="cart_quantity_down" href="{% url 'item_decrement' value.product_id %}"> ─ </a>
+                                                        <a class="cart_quantity_down"  style="color: #4CAF90" href="{% url 'item_decrement' value.product_id %}"> &#9866;</a>
                                                     {% else %}
-                                                        <a class="cart_quantity_down" href="{% url 'item_clear' key %}"> - </a>
+                                                        <a class="cart_quantity_down"  style="color: #4CAF90" href="{% url 'item_clear' key %}"> &#9866; </a>
                                                     {% endif %}
                                                 </div>
                                             </td>
                                             <td class="product-subtotal">Rs. {{ value.price|multiply:value.quantity }}0</td>
                                           <td class="product-remove">
-                                            <a href="{% url 'item_clear' key %}">❌</a>
+                                            <a href="{% url 'item_clear' key %}">&#10006</a>
                                         </td>
                                         </tr>
                                     {% endfor %}
@@ -122,16 +120,18 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 <script>
-    if (!localStorage.getItem('pageReloaded')) {
 
-    localStorage.setItem('pageReloaded', 'true');
-    setTimeout(function() {
-        location.reload();
-    }, 1000);
-} else {
+ document.addEventListener("DOMContentLoaded", function() {
+        if (!localStorage.getItem('pageReloaded')) {
+            localStorage.setItem('pageReloaded', 'true');
 
-}
-
+            setTimeout(function() {
+                location.reload();
+            }, 1000);
+        } else {
+            localStorage.removeItem('pageReloaded');
+        }
+    });
 
     document.addEventListener("DOMContentLoaded", function() {
         var grandTotal = parseFloat("{{ cart_total_amount }}");

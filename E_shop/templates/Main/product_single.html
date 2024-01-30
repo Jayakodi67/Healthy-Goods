@@ -12,8 +12,8 @@
                         {% for i in prod.images_set.all %}
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto" src="/{{i.image}}" alt="">
-                                <a class="venobox full-preview" data-gall="myGallery" href="/{{i.image}}">
-                                    <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+                                <a class="venobox full-preview" style="background-color: #4CAF90" data-gall="myGallery" href="/{{i.image}}">
+                                    <i>&#9776</i>
                                 </a>
                             </div>
                         {% endfor %}
@@ -23,11 +23,10 @@
                     <div class="swiper-wrapper">
                         {% for i in prod.images_set.all %}
                             <div class="swiper-slide">
-                                <img class="img-responsive m-auto" src="/{{i.image}}" alt="">
+                                <img class="img-responsive m-auto" src="/{{i.image}}" alt="" s>
                             </div>
                         {% endfor %}
                     </div>
-                    <!-- Add Arrows -->
                     <div class="swiper-buttons">
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -52,34 +51,25 @@
                         </div>
                     </div>
                     <div class="pro-details-categories-info pro-details-same-style d-flex m-0">
-                        <span>Categories: </span>
+                        <span  style="color: #4CAF90;">Categories: </span>
                         <ul class="d-flex">
                             <li><a href="#">{{prod.categories}}</a></li>
                         </ul>
                     </div>
 
                     <div class="pro-details-quality">
-<!--                        <div class="cart-plus-minus">-->
-<!--                            <input id="quantity" class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />-->
-<!--                            <div class="quantity-buttons">-->
-<!--                                <button class="quantity-btn" onclick="decrementQuantity()">-</button>-->
-<!--                                <button class="quantity-btn" onclick="incrementQuantity()">+</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
                         <div class="pro-details-cart">
                             <form method="post" action="{% url 'cart_add' id=prod.id %}">
                                 {% csrf_token %}
-<!--                                <input type="hidden" name="quantity" id="cartQuantity" value="1">-->
-<!--                                      <input name="quantity" id="cartQuantity">-->
                                 <button type="submit" class="add-cart" style="background-color: #4CAF90">Add To Cart</button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <!-- product details description area start -->
-                <div class="description-review-wrapper">
+                <div class="description-review-wrapper" >
                     <div class="description-review-topbar nav">
-                        <button class="active" data-bs-toggle="tab" data-bs-target="#des-details1">Description</button>
+                        <p style="color: #4CAF90; font-size: large">Description</p>
                     </div>
                     <div class="tab-content description-review-bottom">
                         <div id="des-details2" class="tab-pane"></div>
@@ -90,7 +80,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- product details description area end -->
             </div>
         </div>
     </div>
