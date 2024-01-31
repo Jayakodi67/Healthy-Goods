@@ -1,10 +1,13 @@
-
+![image](https://github.com/Jayakodi67/Orga-Green/assets/152485458/2cf753a9-7e7e-43b8-bfe3-33a708a38ef6)![image](https://github.com/Jayakodi67/Orga-Green/assets/152485458/32135fa3-9a9c-46e8-a1bf-fab1606a057e)![image](https://github.com/Jayakodi67/Orga-Green/assets/152485458/c152354a-1a20-496c-939f-18fa2853f7ab)
 </head>
 <body>
 
 <h1 align="center">Orga Green - E-commerce Web Application</h1>
 
-<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/logo2/logo.png?raw=true" alt="Orga Green Logo" style="display: block; margin: 0 auto; width:10 px">
+
+<div style="text-align: center;">
+    <img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/logo2/logo.png?raw=true" alt="Orga Green Logo" style="display: inline-block; width: 300px;">
+</div>
 
 <h2>Overview</h2>
 <p>
@@ -19,6 +22,7 @@
   <li><strong>Shopping Cart:</strong> Add products to the cart, update quantities, and remove items as needed.</li>
   <li><strong>Checkout:</strong> Securely pay for orders using Razorpay integration.</li>
   <li><strong>Order Management:</strong> Users can view their order history and check order statuses.</li>
+   <li><strong>Genrate Reports:</strong> Users can genarate reports about there orders.</li>
 </ul>
 
 <h2>Technologies Used</h2>
@@ -27,15 +31,14 @@
   - JavaScript<br>
   - Razorpay<br>
   - XHTML (Note: HTML is not explicitly installed as it's a markup language)<br>
-  - Shopping Cart (Assuming it's a Django app or module)<br>
-  - Other libraries/frameworks/tools (list any additional technologies used)
+  - Shopping Cart <br>
 </p>
 
 <h2>Installation</h2>
 
 <h3>Prerequisites</h3>
 <p>
-  - Python 3.x<br>
+  - Python <br>
   - Django
 </p>
 
@@ -62,6 +65,31 @@
 <pre>
   <code> pip install xhtml2pdf </code>
 </pre>
+
+
+
+
+h2>Screenshots</h2>
+<h3>Home Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/home.png?raw=true">
+
+<h3>Product Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/product.png?raw=true">
+
+<h3>Cart Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/cart.png?raw=true">
+
+
+<h3>Contact Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/contact.png?raw=true">
+
+<h3>About Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/about.png?raw=true">
+
+<h3>Billing Details Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/bill.png?raw=true">
+
+
   
 <h2>Contributing</h2>
 <p>Contributions are welcome! Please fork the repository and submit a pull request.</p>
