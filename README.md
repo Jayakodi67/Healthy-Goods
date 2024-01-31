@@ -1,12 +1,16 @@
-![image](https://github.com/Jayakodi67/Orga-Green/assets/152485458/2cf753a9-7e7e-43b8-bfe3-33a708a38ef6)![image](https://github.com/Jayakodi67/Orga-Green/assets/152485458/32135fa3-9a9c-46e8-a1bf-fab1606a057e)![image](https://github.com/Jayakodi67/Orga-Green/assets/152485458/c152354a-1a20-496c-939f-18fa2853f7ab)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 
 <h1 align="center">Orga Green - E-commerce Web Application</h1>
 
-
 <div style="text-align: center;">
-    <img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/logo2/logo.png?raw=true" alt="Orga Green Logo" style="display: inline-block; width: 300px;">
+    <img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/logo2/logo.png?raw=true" alt="Orga Green Logo" style="display: inline-block; width: 100px;">
 </div>
 
 <h2>Overview</h2>
@@ -14,6 +18,37 @@
   Orga Green is a Django-based e-commerce web application designed to sell organic fruits, vegetables, fertilizers, seeds, and crops.
   Users can browse through the product catalog, add items to their cart, and securely checkout using Razorpay payment gateway.
 </p>
+
+<h2>Features</h2>
+<ul>
+  <li><strong>Product Catalog:</strong> Browse a wide range of organic products including fruits, vegetables, fertilizers, seeds, and crops.</li>
+  <li><strong>User Authentication:</strong> Users can register, log in, and manage their profiles.</li>
+  <li><strong>Shopping Cart:</strong> Add products to the cart, update quantities, and remove items as needed.</li>
+  <li><strong>Checkout:</strong> Securely pay for orders using Razorpay integration.</li>
+  <li><strong>Order Management:</strong> Users can view their order history and check order statuses.</li>
+</ul>
+
+<h2>Screenshots</h2>
+
+<h3>Home Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/home.png?raw=true">
+
+<h3>Product Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/product.png?raw=true">
+
+<h3>Cart Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/cart.png?raw=true">
+
+
+<h3>Contact Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/contact.png?raw=true">
+
+<h3>About Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/about.png?raw=true">
+
+<h3>Billing Details Page</h3>
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/bill.png?raw=true">
+
 
 <h2>Features</h2>
 <ul>
@@ -68,34 +103,13 @@
 
 
 
-
-h2>Screenshots</h2>
-<h3>Home Page</h3>
-<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/home.png?raw=true">
-
-<h3>Product Page</h3>
-<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/product.png?raw=true">
-
-<h3>Cart Page</h3>
-<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/cart.png?raw=true">
-
-
-<h3>Contact Page</h3>
-<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/contact.png?raw=true">
-
-<h3>About Page</h3>
-<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/about.png?raw=true">
-
-<h3>Billing Details Page</h3>
-<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/screenshots/bill.png?raw=true">
-
-
-  
-<h2>Contributing</h2>
-<p>Contributions are welcome! Please fork the repository and submit a pull request.</p>
-
-<h2>License</h2>
-<p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+<h2>Technologies Used</h2>
+<p>
+  - Django<br>
+  - JavaScript<br>
+  - Razorpay<br>
+  - XHTML (Note: HTML is not explicitly installed as it's a markup language)<br>
+</p>
 
 </body>
 </html>
