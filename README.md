@@ -4,7 +4,7 @@
 
 <h1 align="center">Orga Green - E-commerce Web Application</h1>
 
-<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/logo2/logo.png?raw=true" alt="Orga Green Logo" style="display: block; margin: 0 auto;">
+<img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/logo2/logo.png?raw=true" alt="Orga Green Logo" style="display: block; margin: 0 auto; width:20 px">
 
 <h2>Overview</h2>
 <p>
