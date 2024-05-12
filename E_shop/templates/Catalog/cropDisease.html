@@ -1,15 +1,128 @@
 {% extends 'Catalog/catalogBase.html' %}
 {% block content %}
 {% load static %}
+
+
+<style>
+    .sticky-nav.scrolled {
+        background-color: #000000;
+    }
+
+    @keyframes blink {
+        0%, 100% {
+            background-color: #4CAF90;
+            color: #fff;
+        }
+        50% {
+            background-color: #000000;
+            color: #4CAF90;
+        }
+    }
+
+    #blinkingButton {
+        display: inline-block;
+        padding: 5px 20px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        animation: blink 1s infinite;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #blinkingButton:hover {
+        background-color: #000000;
+        color: #4CAF90;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .main-menu ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .main-menu ul li {
+        margin-right: 20px;
+    }
+
+    .main-menu .dropdown {
+        position: relative;
+    }
+
+    .main-menu .dropdown:hover .sub-menu {
+        display: block;
+    }
+
+    .main-menu .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #4CAF90;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .header-nav .main-menu .dropdown .sub-menu li a:hover {
+        color: rgb(204, 204, 204) !important;
+    }
+
+    .search-element {
+        margin-left: auto;
+    }
+    .header-bottom {
+        text-align: center;
+        background-color: #DFF4F2;
+        padding: 20px 0; 
+    }
+
+    .header-logo img {
+        max-height: 110px;
+        width: auto;
+        margin: 0 auto;
+        display: block; 
+    }
+
+    .tagline {
+        color: #306030; 
+        font-size: 20px; 
+        margin-top: 10px; 
+        text-align: center;
+    }
+</style>
+
+
+
     <div style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
         <img src="{% static 'assets/images/catalog/crop.jpg' %}" alt="Crop Disease" style="width: 70%; max-width: 1100px; "/>
     </div>
 
-    <div style="padding: 20px; background-color: #f9f9f9; max-width: 1100px; margin: 0 auto;">
-        <div style="margin: 0 20px;">
-            <h2 style="color: #000; margin-bottom: 20px; margin-TOP: 40px;">Disease detection</h2>
 
-            <p><strong>Category:</strong> Plant Pathology</p>
+    
+    <div style="padding: 20px; background-color: #f9f9f9; max-width: 1100px; margin: 0 auto;">
+
+        <div style="margin: 0 0px;">
+            <h2 style="color: #000; margin-bottom: 30px; margin-TOP: 40px;">Disease Detection</h2>
+
+              
+             <div style="padding-right: 50px; border-radius: 5px;">
+    <a href="http://127.0.0.1:5000" id="" style="text-decoration: none; font-weight: bold; padding: 5px 20px; border: 2px solid; border-radius: 5px; width: 200px; height: 45px; color: #099660; background-color: #fff; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#099660'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#fff'; this.style.color='#099660';">
+        Disease Detector
+    </a>
+</div>
+          
+
+            <p style="margin-top: 3%; "><strong>Category:</strong> Plant Pathology</p>
             <p><strong>Key Pathogens:</strong> Fungi, Bacteria, Viruses</p>
             <p style="margin-bottom: 40px;"><strong>Impact:</strong> Crop diseases can lead to significant yield losses and economic damage to farmers.</p>
 

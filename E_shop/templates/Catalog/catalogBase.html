@@ -43,6 +43,21 @@
         }
 
         #blinkingButton:hover {
+            background-color: #d62828;
+            color: #4CAF90;
+        }
+
+        #blinkingButton2 {
+            display: inline-block;
+            padding: 5px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #blinkingButton2:hover {
             background-color: #000000;
             color: #4CAF90;
         }
@@ -111,6 +126,10 @@
             margin-top: 10px; 
             text-align: center;
         }
+
+        .main-menu ul li a:hover {
+            color: #055c42 !important;
+        }
     </style>
 </head>
 
@@ -128,25 +147,22 @@
                     </div>
                 </div>
             </div>
-
             <div class="header-bottom">
                 <div class="container">
                     <div class="header-logo">
                         <a href="{% url 'home' %}">
                             <img src="{% static 'assets/images/logo2/logo5.png' %}" alt="Site Logo" />
                         </a>
-                        <div class="tagline">Nurturing Nature for a Healthier Future</div>
+                        <div class="tagline">Nurturing Nature for a Healthier Future</div>            
                     </div>
                 </div>
             </div>
-
-            
-
             <div class="header-nav" style="display: flex; justify-content: space-between; align-items: center; height: 60px; background-color: #4CAF90; color: #ffffff;">
                 <div class="main-menu" style="background-color: #4CAF90; padding: 10px; border-radius: 5px; width: 1050px; height: 50px; color: #ffffff;">
 
                     <ul style="display: flex; margin: 0; padding: 0; list-style: none;">
-                        <li style="margin-right: 10px;"><a href="{% url 'main' %}" style="color: #ffffff;">Home</a></li>
+                        <li style="margin-right: 10px; "><a href="{% url 'main' %}" style="color: #ffffff;text-transform: capitalize;">Home</a></li>
+
                         <li class="dropdown">
                             <a style="color: #ffffff;text-transform: capitalize;">how to plant <i>▼</i></a>
                             <ul class="sub-menu" style="background-color: #4CAF90;">
@@ -159,14 +175,22 @@
                         </li>
                         <li style="margin-right: 10px;"><a href="{% url 'fertilizer' %}" style="color: #ffffff; text-transform: capitalize;">fertilizer</a></li>
                         <li style="margin-right: 10px;"><a href="{% url 'gap' %}" style="color: #ffffff; text-transform: capitalize;">GAP Introduction</a></li>
-                        <li style="margin-right: 10px;"><a href="{% url 'ph' %}" style="color: #ffffff; text-transform: capitalize;">PH Measure Information</a></li>
+                        
+                        <li style="margin-right: 10px;">
+                            <a href="{% url 'ph' %}" style="color: #ffffff;">
+                                <span style="text-transform: lowercase;">p</span><span style="text-transform: uppercase;">h</span> <span style="text-transform: capitalize;">Measure Information</span>
+                            </a>
+                        </li>
+
                         <li style="margin-right: 10px;"><a href="{% url 'crop' %}" style="color: #ffffff; text-transform: capitalize;">Disease Detection</a></li>
                     </ul>
                 </div>
                 <div style="padding-right: 50px; border-radius: 5px;">
-                    <a href="{% url 'home' %}" id="blinkingButton" style="text-decoration: none; font-weight: bold; padding: 5px 20px; border: 2px solid; border-radius: 5px; width: 200px; height: 45px; color: #ffffff;">
+                    <a href="{% url 'home' %}" id="blinkingButton2" style="text-decoration: none; font-weight: bold; padding: 5px 20px; border: 2px solid; border-radius: 5px; width: 200px; height: 45px; color: #ffffff;">
                         Online Shopping ►
                     </a>
+
+                    <!-- id="blinkingButton" -->
                 </div>
             </div>
 
@@ -263,12 +287,18 @@
                             <div class="col-md-6 col-lg-3 col-sm-12">
                                 <div class="single-wedge">
                                     <h4 class="footer-herading">Contact Info</h4>
-                                    <div class="footer-links">
+
+
+
+                                   <div class="footer-links">
                                         <!-- News letter area -->
-                                        <p class="address" style="color: #000000; text-decoration: none;"  onmouseover="this.style.color='#4CAF90'"  onmouseout="this.style.color='#000000'">Address : 37/B , Malwatta , Colombo</p>
-                                        <p class="phone" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4CAF90'"  onmouseout="this.style.color='#000000'">Phone : +076 426 4976</p>
-                                        <p class="mail" style="color: #000000; text-decoration: none;"  onmouseover="this.style.color='#4CAF90'"  onmouseout="this.style.color='#000000'">Email : healthyGoods@gmail.com"</p>
+                                        <p class="address" style="color: #000000; text-decoration: none;">Address : <span onmouseover="this.style.color='#4CAF90'" onmouseout="this.style.color='#000000'">37/B , Malwatta , Colombo</span></p>
+                                        <p class="phone" style="color: #000000; text-decoration: none;">Phone : <a href="tel:+0764264976" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4CAF90'" onmouseout="this.style.color='#000000'">+076 426 4976</a></p>
+                                        <p class="mail" style="color: #000000; text-decoration: none;">Email : <a href="mailto:healthyGoods@gmail.com" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4CAF90'" onmouseout="this.style.color='#000000'">healthyGoods@gmail.com</a></p>
                                     </div>
+
+
+
                                 </div>
                             </div>
                         </div>

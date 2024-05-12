@@ -10,7 +10,7 @@
 <h1 align="center">Healthy Goods - E-commerce Web Application</h1>
 
 <div style="text-align: center;">
-    <img src="https://github.com/HimanthaD4/Helathy_Goods/blob/main/E_shop/static/assets/images/logo2/logo5.png?raw=true" alt="" style="display: inline-block; width: 200px;">
+    <img src="https://github.com/Jayakodi67/Orga-Green/blob/main/E_shop/static/assets/images/logo2/logo.png?raw=true" alt="Orga Green Logo" style="display: inline-block; width: 200px;">
 </div>
 
 <h2>Overview</h2>

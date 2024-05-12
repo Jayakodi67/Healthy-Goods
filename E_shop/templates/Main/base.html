@@ -35,6 +35,9 @@
             margin: 0 auto; 
             display: block; 
         }
+          .main-menu ul li a:hover {
+            color: #055c42 !important;
+        }
         
 </style>
 </head>
@@ -106,14 +109,14 @@
             <div class="header-nav-area d-none d-lg-block sticky-nav" style="background-color: #4CAF90">
                 <div class="container">
                     <div class="header-nav">
-                         <div class="main-menu position-relative" style="background-color: #4CAF90; color: #fff;">
-                                <ul>
-                                    <li><a href="{% url 'home' %}">Home</a></li>
-                                    <li><a href="{% url 'products' %}">Products</a></li>
-                                    <li><a href="{% url 'contact' %}">Contact</a></li>
-                                     <li><a href="{% url 'about' %}">About</a></li>
-                                </ul>
-                            </div>
+                        <div class="main-menu position-relative" style="background-color: #4CAF90; color: #fff;">
+    <ul>
+        <li><a href="{% url 'home' %}" style="text-transform: capitalize;">Home</a></li>
+        <li><a href="{% url 'products' %}" style="text-transform: capitalize;">Products</a></li>
+        <li><a href="{% url 'contact' %}" style="text-transform: capitalize;">Contact</a></li>
+        <li><a href="{% url 'about' %}" style="text-transform: capitalize;">About</a></li>
+    </ul>
+</div>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +176,11 @@
                 </div>
             </div>
         </div>
-{% block content %} {% endblock %}
+
+
+            {% block content %} {% endblock %}
+
+
 <!--footer area start-->
  <div class="footer-area" style="background-color: #DFF4F2;">
             <div class="footer-container">
@@ -255,12 +262,13 @@
                             <div class="col-md-6 col-lg-3 col-sm-12">
                                 <div class="single-wedge">
                                     <h4 class="footer-herading">Contact Info</h4>
-                                    <div class="footer-links">
+                                     <div class="footer-links">
                                         <!-- News letter area -->
-                                        <p class="address" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4CAF90'" onmouseout="this.style.color='#000000'" href="{% url 'contact' %} ">Address: 37/B , Malwatta , Colombo</p>
-                                        <p class="phone" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4CAF90'" onmouseout="this.style.color='#000000'" href="{% url 'contact' %} ">Phone : +076 426 4976</a></p>
-                                        <p class="mail" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4CAF90'" onmouseout="this.style.color='#000000'" href="{% url 'contact' %} ">Email: healthygoods4@gmail.com"</a></p>
+                                        <p class="address" style="color: #000000; text-decoration: none;">Address : <span onmouseover="this.style.color='#4CAF90'" onmouseout="this.style.color='#000000'">37/B , Malwatta , Colombo</span></p>
+                                        <p class="phone" style="color: #000000; text-decoration: none;">Phone : <a href="tel:+0764264976" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4CAF90'" onmouseout="this.style.color='#000000'">+076 426 4976</a></p>
+                                        <p class="mail" style="color: #000000; text-decoration: none;">Email : <a href="mailto:healthyGoods@gmail.com" style="color: #000000; text-decoration: none;" onmouseover="this.style.color='#4CAF90'" onmouseout="this.style.color='#000000'">healthyGoods@gmail.com</a></p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
